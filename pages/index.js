@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import Navbar from './Shared/Navber';
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <h1>HELLO</h1>
+        <Navbar></Navbar>
       </div>
     </>
   )
