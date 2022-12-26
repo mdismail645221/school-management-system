@@ -5,27 +5,27 @@ const BranchSession = () => {
         <section className="mt-20">
             <div className="grid grid-cols-1 md:grid-cols-2">
                 <div>
-                    <ul className='flex items-center'>
-                        <li><a className='text-black' href='/'></a><CottageIcon />Home / </li>
-                        <li><a className='text-black' href='/'></a><InfoIcon />Dashboard</li>
+                    <ul className='flex items-center space-x-3'>
+                        <li className='text-blue-600'><a className='text-blue-600' href='/'></a><CottageIcon className="w-5" />Home / </li>
+                        <li><a className='text-black' href='/'></a><InfoIcon className="w-5" />Dashboard</li>
                     </ul>
                 </div>
                 {/* end left side */}
                 <div className='flex items-center justify-between'>
-                    <div className='flex items-center space-x-2'>
-                        <div className='bg-gray-200 px-3 py-2 rounded-lg'>
+                    <div className='flex items-center space-x-2 border'>
+                        <div className='bg-gray-200 px-3 py-2'>
                             <span>Branch</span>
                         </div>
-                        <select>
+                        <select className='w-[150px]'>
                             <option>Newron school & college</option>
                         </select>
                     </div>
                     {/* end branch */}
-                    <div className='flex items-center space-x-2'>
-                        <div className='bg-gray-200 px-3 py-2 rounded-lg'>
-                            <span>Section</span>
+                    <div className='flex items-center space-x-2 border'>
+                        <div className='bg-gray-200 px-3 py-2'>
+                            <span>Session</span>
                         </div>
-                        <select>
+                        <select className='w-[150px]'>
                             <option>2022</option>
                             <option>2023</option>
                         </select>
