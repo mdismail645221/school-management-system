@@ -26,7 +26,7 @@ const Posts = ({ posts }) => {
         <section className="mt-20">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {
-                    users.map(user => <Card key={user.id} className={`${user.id === 1 ? "bg-red-300" : "bg-blue-300"}`}>
+                    users.map(user => <Card key={user.id} className={`${user.id === 1 && "bg-red-300"} ${user.id === 2 && "bg-blue-300"} ${user.id === 3 && "bg-green-300"}`}>
                         <CardContent  className="flex items-center justify-between">
                             <div>
                                 {
