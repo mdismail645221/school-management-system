@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Navbar from './Shared/Navber';
+import BranchSession from './BranchSession/BranchSession';
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function Home() {
       </Head>
       <div>
         <Navbar></Navbar>
+        <BranchSession></BranchSession>
       </div>
     </>
   )
