@@ -6,6 +6,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Navbar from './Shared/Navber';
 import BranchSession from './BranchSession/BranchSession';
+import SGT from './SGT/SGT';
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function Home() {
       <div>
         <Navbar></Navbar>
         <BranchSession></BranchSession>
+        <SGT></SGT>
       </div>
     </>
   )

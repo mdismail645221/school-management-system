@@ -1,0 +1,110 @@
+ [
+    {
+        "id": 1,
+        "title" : "students",
+        "students": [
+            {
+                "name": "raj",
+                "class": "ten",
+                "phone": "01612147103",
+                "Gender": "female",
+                "Date of birth": "24/07/2008",
+                "Blood Group": "Unknwon",
+                "Father name": "rahim",
+                "Mohter name": "rahima"
+            },
+            {
+                "name": "raj",
+                "class": "ten",
+                "phone": "01612147103",
+                "Gender": "female",
+                "Date of birth": "24/07/2008",
+                "Blood Group": "Unknwon",
+                "Father name": "rahim",
+                "Mohter name": "rahima"
+            },
+            {
+                "name": "raj",
+                "class": "ten",
+                "phone": "01612147103",
+                "Gender": "female",
+                "Date of birth": "24/07/2008",
+                "Blood Group": "Unknwon",
+                "Father name": "rahim",
+                "Mohter name": "rahima"
+            }
+        ] 
+    },
+    {
+        "id": 2,
+        "title" : "Teacher",
+        "students": [
+            {
+                "name": "raju",
+                "class": "seven",
+                "phone": "01612147103",
+                "Gender": "female",
+                "Date of birth": "24/07/2008",
+                "Blood Group": "Unknwon",
+                "Father name": "rahim",
+                "Mohter name": "rahima"
+            },
+            {
+                "name": "jhon don",
+                "class": "ten",
+                "phone": "01612147103",
+                "Gender": "female",
+                "Date of birth": "24/07/2008",
+                "Blood Group": "Unknwon",
+                "Father name": "rahim",
+                "Mohter name": "rahima"
+            },
+            {
+                "name": "raj",
+                "class": "ten",
+                "phone": "01612147103",
+                "Gender": "female",
+                "Date of birth": "24/07/2008",
+                "Blood Group": "Unknwon",
+                "Father name": "rahim",
+                "Mohter name": "rahima"
+            }
+        ] 
+    },
+    {
+        "id": 3,
+        "title" : "Guardian",
+        "students": [
+            {
+                "name": "rahi",
+                "class": "seven",
+                "phone": "01612147103",
+                "Gender": "female",
+                "Date of birth": "24/07/2008",
+                "Blood Group": "Unknwon",
+                "Father name": "rahim",
+                "Mohter name": "rahima"
+            },
+            {
+                "name": "jhon don",
+                "class": "ten",
+                "phone": "01612147103",
+                "Gender": "female",
+                "Date of birth": "24/07/2008",
+                "Blood Group": "Unknwon",
+                "Father name": "rahim",
+                "Mohter name": "rahima"
+            },
+            {
+                "name": "rafi",
+                "class": "ten",
+                "phone": "01612147103",
+                "Gender": "female",
+                "Date of birth": "24/07/2008",
+                "Blood Group": "Unknwon",
+                "Father name": "rahim",
+                "Mohter name": "rahima"
+            }
+        ] 
+    }
+]
