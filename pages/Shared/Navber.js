@@ -13,6 +13,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import Link from 'next/link';
+
 
 // interface Props {
 //   /**
@@ -23,7 +25,11 @@ import Button from '@mui/material/Button';
 // }
 
 const drawerWidth = 240;
-const navItems = ['Student', 'Gurdian', 'Teacher'];
+const navItems = <>
+  <li><Link href="/" className='text-white'>students</Link></li>
+  <li><Link href="/" className='text-white'>Teacher</Link></li>
+  <li><Link href="/" className='text-white'>Dashboard</Link></li>
+  </>
 
 export default function Navbar(props) {
   const { window } = props;
@@ -39,15 +45,9 @@ export default function Navbar(props) {
         Sikho
       </Typography>
       <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} s>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+      <ul className='text-black'>
+        {navItems}
+      </ul>
     </Box>
   );
 
@@ -74,12 +74,17 @@ export default function Navbar(props) {
           >
             Sikho
           </Typography>
+      
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
+
+             <ul className='flex space-x-5 text-white'>
+               {navItems}
+             </ul>
+            {/* {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>
                 {item}
               </Button>
-            ))}
+            ))} */}
           </Box>
         </Toolbar>
       </AppBar>

@@ -24,7 +24,7 @@ body{
 }
 a{
   text-decoration: none;
-  display: none;
+  display: inline-block;
   color: #000;
 }
 li{

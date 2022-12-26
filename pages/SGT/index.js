@@ -12,6 +12,8 @@ import Image from "next/image";
 import PersonIcon from '@mui/icons-material/Person';
 import Person4Icon from '@mui/icons-material/Person4';
 import GroupIcon from '@mui/icons-material/Group';
+import Link from "next/link";
+
 
 const Posts = ({ posts }) => {
 
@@ -27,29 +29,33 @@ const Posts = ({ posts }) => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {
                     users.map(user => <Card key={user.id} className={`${user.id === 1 && "bg-red-300"} ${user.id === 2 && "bg-blue-300"} ${user.id === 3 && "bg-green-300"}`}>
-                        <CardContent  className="flex items-center justify-between">
-                            <div>
-                                {
-                                    user.id === 1 && <PersonIcon className="text-5xl" />
-                                }
-                                {
-                                    user.id === 2 && <Person4Icon className="text-5xl" />
-                                }
-                                {
-                                    user.id === 3 && <GroupIcon className="text-5xl" />
-                                }
-                                <Typography variant="body2" color="text.secondary" className="text-2xl">
-                                    {user.title}
-                                </Typography>
-                            </div>
-                            <div>
-                                <h3 className="text-5xl">{user.students.length}</h3>
-                            </div>
-                        </CardContent>
-                        <CardActions>
-                            {/* <Button size="small">Share</Button> */}
-                            <Button size="small">Learn More</Button>
-                        </CardActions>
+
+                            <CardContent className="flex items-center justify-between">
+                                <div>
+                                    {
+                                        user.id === 1 && <PersonIcon className="text-5xl" />
+                                    }
+                                    {
+                                        user.id === 2 && <Person4Icon className="text-5xl" />
+                                    }
+                                    {
+                                        user.id === 3 && <GroupIcon className="text-5xl" />
+                                    }
+                                    <Typography variant="body2" color="text.secondary" className="text-2xl">
+                                        {user.title}
+                                    </Typography>
+                                </div>
+                                <div>
+                                    <h3 className="text-5xl">{user.students.length}</h3>
+                                </div>
+                            </CardContent>
+                            <Link href={`${user.id}`}>
+                                <CardActions>
+                                    {/* <Button size="small">Share</Button> */}
+                                    <Button size="small">Learn More</Button>
+                                </CardActions>
+                            </Link>
+              
                     </Card>)
                 }
             </div>

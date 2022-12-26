@@ -11,12 +11,12 @@ const BranchSession = () => {
                     </ul>
                 </div>
                 {/* end left side */}
-                <div className='flex items-center justify-between'>
+                <div className='flex sm:flex-col md:flex-row space-x-3 items-center justify-between '>
                     <div className='flex items-center space-x-2 border'>
                         <div className='bg-gray-200 px-3 py-2'>
                             <span>Branch</span>
                         </div>
-                        <select className='w-[150px]'>
+                        <select className='w-full'>
                             <option>Newron school & college</option>
                         </select>
                     </div>
@@ -25,7 +25,7 @@ const BranchSession = () => {
                         <div className='bg-gray-200 px-3 py-2'>
                             <span>Session</span>
                         </div>
-                        <select className='w-[150px]'>
+                        <select className='w-full'>
                             <option>2022</option>
                             <option>2023</option>
                         </select>

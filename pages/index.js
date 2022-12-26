@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Navbar from './Shared/Navber';
 import BranchSession from './BranchSession/BranchSession';
-import SGT from './SGT/SGT';
+import SGT from './SGT';
 
 // const inter = Inter({ subsets: ['latin'] })
 
