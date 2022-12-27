@@ -4,8 +4,13 @@ import Stu from '../pages/Stu'
 import ViewListIcon from '@mui/icons-material/ViewList';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import { red } from '@mui/material/colors';
+import AddModal from '../Components/AddModal/AddModal';
+import { Button } from '@mui/material';
 
 const Student = () => {
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
     const [students, setStudent] = useState([]);
     useEffect(()=>{
@@ -31,13 +36,14 @@ const Student = () => {
                     border: "2px solid #ddd",
                     borderBottom: "none"
                 }}><ViewListIcon/>List</li>
-                <li style={{
+                <li onClick={handleOpen}  style={{
                     background: "#eee",
                     padding: "4px 8px",
                     borderRadius: "15px",
                     border: "2px solid #ddd",
                     cursor: "pointer"
                 }}><ControlPointIcon className='mr-2' />Add new student</li>
+                {/* <Button >Open modal</Button> */}
             </ul>
         </div>
 
@@ -47,6 +53,12 @@ const Student = () => {
                     {students.map(stu=> <Stu key={stu._id} stu={stu}></Stu> )}
                 </div>
             </section>
+
+            <AddModal 
+                handleOpen={handleOpen}
+                 handleClose={handleClose}
+                 open={open}
+            ></AddModal>
         </div>
     );
 };
