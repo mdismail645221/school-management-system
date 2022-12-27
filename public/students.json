@@ -1,0 +1,35 @@
+[
+    {
+        "id": "01",
+        "name": "raj",
+        "class": "ten",
+        "phone": "01612147103",
+        "Gender": "female",
+        "Date of birth": "24/07/2008",
+        "Blood Group": "Unknwon",
+        "Father name": "rahim",
+        "Mohter name": "rahima"
+    },
+    {   
+        "id": "02",
+        "name": "raju",
+        "class": "ten",
+        "phone": "01612147103",
+        "Gender": "female",
+        "Date of birth": "24/07/2008",
+        "Blood Group": "Unknwon",
+        "Father name": "rahim",
+        "Mohter name": "rahima"
+    },
+    {
+        "id": "03",
+        "name": "rahi",
+        "class": "ten",
+        "phone": "01612147103",
+        "Gender": "female",
+        "Date of birth": "24/07/2008",
+        "Blood Group": "Unknwon",
+        "Father name": "rahim",
+        "Mohter name": "rahima"
+    }
+] 

@@ -30,3 +30,7 @@ a{
 li{
   list-style: none;
 }
+
+.drawer-navber li a {
+  color: #000;
+}

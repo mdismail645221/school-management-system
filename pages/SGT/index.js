@@ -19,7 +19,7 @@ const Posts = ({ posts }) => {
 
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch("sgt.json")
+        fetch("http://localhost:5000/allUsers")
             .then(res => res.json())
             .then(data => setUsers(data))
     }, [])
@@ -49,7 +49,7 @@ const Posts = ({ posts }) => {
                                     <h3 className="text-5xl">{user.students.length}</h3>
                                 </div>
                             </CardContent>
-                            <Link href={`${user.id}`}>
+                            <Link href={`/Student`}>
                                 <CardActions>
                                     {/* <Button size="small">Share</Button> */}
                                     <Button size="small">Learn More</Button>

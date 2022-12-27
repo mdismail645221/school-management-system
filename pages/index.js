@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
         <BranchSession></BranchSession>
         <SGT></SGT>
       </div>

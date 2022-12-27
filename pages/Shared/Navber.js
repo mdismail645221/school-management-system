@@ -29,7 +29,7 @@ const navItems = <>
   <li><Link href="/" className='text-white'>students</Link></li>
   <li><Link href="/" className='text-white'>Teacher</Link></li>
   <li><Link href="/" className='text-white'>Dashboard</Link></li>
-  </>
+</>
 
 export default function Navbar(props) {
   const { window } = props;
@@ -45,7 +45,7 @@ export default function Navbar(props) {
         Sikho
       </Typography>
       <Divider />
-      <ul className='text-black'>
+      <ul className='flex flex-col space-y-3 text-black drawer-navber justify-center items-center'>
         {navItems}
       </ul>
     </Box>
@@ -74,12 +74,12 @@ export default function Navbar(props) {
           >
             Sikho
           </Typography>
-      
+
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
 
-             <ul className='flex space-x-5 text-white'>
-               {navItems}
-             </ul>
+            <ul className='flex space-x-5 text-white'>
+              {navItems}
+            </ul>
             {/* {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>
                 {item}
@@ -105,7 +105,7 @@ export default function Navbar(props) {
           {drawer}
         </Drawer>
       </Box>
-      
+
     </Box>
   );
 }

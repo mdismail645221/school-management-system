@@ -1,13 +1,14 @@
 import CottageIcon from '@mui/icons-material/Cottage';
 import InfoIcon from '@mui/icons-material/Info';
-const BranchSession = () => {
+const BranchSession = ({student}) => {
+    console.log("student", student)
     return (
         <section className="mt-20">
             <div className="grid grid-cols-1 md:grid-cols-2">
                 <div>
                     <ul className='flex items-center space-x-3'>
                         <li className='text-blue-600'><a className='text-blue-600' href='/'></a><CottageIcon className="w-5" />Home / </li>
-                        <li><a className='text-black' href='/'></a><InfoIcon className="w-5" />Dashboard</li>
+                        <li><a className='text-black' href='/'></a><InfoIcon className="w-5" />{student && student} {!student && "Dashboard"}</li>
                     </ul>
                 </div>
                 {/* end left side */}
