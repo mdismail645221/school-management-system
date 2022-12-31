@@ -61,7 +61,7 @@ const Student = () => {
                             <th>Name</th>
                             <th>Roll</th>
                             <th>INFO</th>
-                            <th className='text-center'>ACATION</th>
+                            <th className='text-center'>ACTION</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -71,7 +71,7 @@ const Student = () => {
                                 {/* <th className='text-center'>{idx + 1}</th> */}
                                 <td className='text-center'>{user?.name}</td>
                                 <td className='text-center'>{user?.roll}</td>
-                                <td className='flex justify-center mt-5'>
+                                <td className='flex justify-center py-5'>
                                     <div>
                                         <p><strong>Class: </strong>{user.class}</p>
                                         <p><strong>Email : </strong>{user?.email ? user.email : " [Not provided]"}</p>
